@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <style>
+            body {
+                background: url("Pic.jpg");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size:cover;
+                background-color: azure;
+            }
+            .h1{
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+            }
+            .h1{
+                font-style: italic;
+            }
+            h1{
+                font-size: 50px;
+            }
+            h1{
+                padding: 20px 10px; 
+                border: 1px dotted red;
+                /* margin -left:20px; */
+                margin: 20px; ;
+
+            }
+            .box{
+                border: 1px solid coral;
+                height: 50px;
+                width: 100px;
+                text-align: center;
+                background-color: darkgreen;
+            }
+            /*Descending selector */
+            div p{
+                color: blue;
+            }
+
+

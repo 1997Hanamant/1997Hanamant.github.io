@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <style>
+            <!--Internal css-->
+            h1,h2{
+                color: brown;
+                text-transform: uppercase;
+                text-decoration: underline;
+            }
+            div{
+                color: darkblue;
+            }
+            .username{
+                color: darkgoldenrod;
+            }
+            #email{
+              color: darkorange;
+            }
+            h2:hover{
+                color: bisque;
+                background-color: antiquewhite;
+            
+            }
+            h2{
+                color: chartreuse;
+            }
+        </style>

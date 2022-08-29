@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <style>
+            body {
+                background: url("Pic.jpg");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size:cover;
+                background-color: azure;
+            }
+            .h1{
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+            }
+            .h1{
+                font-style: italic;
+            }
+            #email{
+                color: blue;
+            }
+            h1{
+                font-size: 50px;
+            }
+            h1{
+                padding: 20px 10px; 
+                border: 1px dotted red;
+                /* margin -left:20px; */
+                margin: 20px; ;
+
+            }
+            .box{
+                border: 1px solid coral;
+                height: 100px;
+                width: 200px;
+                text-align: center;
+                background-color: darkgreen;
+            }
+            .Hbox{
+                border:2px solid crimson ;
+                height: 50px;
+                width: 100px;
+            }
+        
+         /*   div p{
+                color: blue;
+            } */
+         /*   child sle
+            div> p{
+                color: fuchsia;
+            } */
+            /*Adajisent Selcetor */
+            div +p{
+                color: blue;
+            }
+           /* Genearl Sibling selector */
+           div~ p{
+            color: red;
+           }
+           .fixed{
+            position: fixed;
+            top: 0;
+            text-align: center;
+            left: 0;
+           }
+           .releative{
+            position: relative;
+            bottom: 0;
+           }
+           .image{
+            position: relative;
+           }
+           .topleft{
+            position: absolute;
+            left: 0;
+
+           }
+           
+
+        </style>
+        <link rel="stylesheet" href="CSS.css">
+    </head>
+    <body >
+       
+      
+        <!----from-->
+        <form>
+         
+            <h1 class="h1">Register Form</h1>
+            <div class="box">
+                <label>Boxing</label>
+
+            </div>
+            <div class="username">
+                <h2>Different selector </h2>
+                <label>Enter userName</label>
+                <input type="text" placeholder="Enter name"name="Enter name"  minlength="1" maxlength="10">
+            </div>
+            <div id="email">
+                <label>Enter email</label>
+                <input type="email" placeholder="Enter email" name="Enter email">
+
+            </div>
+            <div>
+                <label>Enter password</label>
+               <!-- <input type="password">--> 
+               <input type="password">
+            </div>
+            <div>
+                <label>Select Gender</label>
+                <input type="radio" name="gender" checked  >Male
+                <input type="radio" name="gender">female
+                <input type="radio" name="gender">others
+            </div>
+            <div class=Select movie>
+                <label>Select movie</label>
+                <input type="checkbox">Bahubali
+                <input type="checkbox">Gaalipata-2
+                <input type="checkbox">KGF-2
+            </div>
+            <div>
+                <label>Select City</label>
+                <select>
+                    <option>--Select City</option>
+                    <option selected> Dharwad </option>
+                    <option disabled>Bagalkot</option>
+                    <option>VijayPura</option>
+                </select>
+                <div>
+                    <label>Date of birth</label>
+                    <select>
+                        <option value=" month">month</option>
+                        <option value="January">January</option>
+                        <option value="February">February</option>
+                        <option value="March">March</option>
+                        <option value="April">April</option>
+                        <option value="May">May</option>
+                        <option value="June">June</option>
+                        <option value="July">July</option>
+                        <option value="Aagasut">Aagasut</option>
+                        <option value="September">September</option>
+                        <option value="october">october</option>
+                        <option value="Novemebr">Novemebr</option>
+                        <option value="December">December</option>
+                        </select>
+                        <select>
+                            <option value="Days"></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+            
+                        </select>
+                        <Select>
+                            <option value="year"></option>
+                            <option value="1990">1990</option>
+                            <option value="2000">2000</option>
+                            <option value="2020">2020</option>
+
+                        </Select>
+                    <div>
+                        <label> Date of birth</label>
+                        <select>
+                            <input type="Date">
+                        </select>
+                    </div>
+                    <div>
+                        <lable> Enter Age</lable>
+                        <select>
+                            <input type="number" min="1" max="100">
+                        </select>
+                    </div>
+                 <div>
+                    <label>Mobile number</label>
+                    <select>
+                        <input type ="text" name="country code" value="+91" size="1"/>
+                        <input type="text" name="Phone" size="10"/>
+                    </select>
+                    <div>
+                        <label>Enter Address</label>
+                       <select>
+                        <Address><textarea  cols="20" rows="5"></textarea></Address>
+                       </select>
+                    </div>
+
+                 </div>
+                    <label>Upload File</label>
+                    <input type="file">
+                </div>
+            </div>
+            <div>
+                <button type="button">Register </button>
+            </div>
+
+                <button type="reset">reset</button>
+            </div>
+        </form>
+        <div>
+            <p> ESCN</p>
+            <p>MSCN</p>
+            <span>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </span>
+           
+        </div>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lasdg snje jwyebdjsl jwje d x,skwhw s wrwyid x sjsy</p>
+
+        <div class="fixed">
+            <p>Postion fixed</p>
+        </div>
+
+        <div class="releative">
+            <p> position releative</p>
+        </div>
+        <div class="image">
+            <img src="download.jpg">
+            <span class="topleft">MS Dhoni</span>
+        </div>
+        <div>
+            <img src="">
+            <span>Suresh Raina</span>
+            
+        </div>
+        <!-----order list,unorder list-->
+        <!---tables with 40 data-->
+        <!---form date of birth,age,mobile number,address-->
+    </body>
+</html>
+
+  <!--css--
+        limitation of html--
+            font size
+            color
+            Aligment
+
+            syntax for CSS
+            selector{
+                property:value
+            }
+            Type  of seletors
+            1.Element
+            2.Groping
+            3.class 
+            4.Id
+            5.pseudo
+
+            class 6
+            margin
+            border
+            padding
+            
+            CSS combinator
+            1.descding selcetor
+            2.child seletor
+            3.adjust selector
+            4.Genearl sibling selector
+
+            css postion
+
+
+
+
+
+
+
+
+
+
